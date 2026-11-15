@@ -1,0 +1,127 @@
+[
+  {
+    "id": "fin_001",
+    "title": "Market Microstructure Basics",
+    "text": "Market microstructure studies how trades occur and how prices form in financial markets. Key elements include the order book, bid-ask spread, liquidity providers, and the impact of order flow. High-frequency trading and maker-taker fee structures influence short-term price dynamics. Understanding latency, adverse selection, and inventory risk is essential for any quantitative desk."
+  },
+  {
+    "id": "fin_002",
+    "title": "Bid-Ask Spread",
+    "text": "The bid-ask spread is the difference between the highest price a buyer is willing to pay (bid) and the lowest price a seller is willing to accept (ask). It is a primary measure of liquidity cost. Tighter spreads typically indicate deeper markets or higher competition among market makers. In stressed conditions spreads widen as liquidity providers withdraw."
+  },
+  {
+    "id": "fin_003",
+    "title": "Order Types Overview",
+    "text": "Common order types include market orders (execute immediately at best available price), limit orders (execute only at a specified price or better), and stop orders (trigger when a price threshold is reached). Iceberg orders hide size. Understanding these is fundamental to execution algorithms and avoiding unnecessary slippage."
+  },
+  {
+    "id": "fin_004",
+    "title": "Causal Inference in Finance",
+    "text": "Causal inference seeks to identify the effect of one variable on another beyond mere correlation. In markets this includes estimating the impact of monetary policy announcements, earnings surprises, or index rebalancing. Techniques such as difference-in-differences, instrumental variables, and synthetic controls help isolate treatment effects from confounding factors."
+  },
+  {
+    "id": "fin_005",
+    "title": "Time Series Stationarity",
+    "text": "A time series is stationary if its mean, variance, and autocovariance structure remain constant over time. Most asset returns are approximately stationary after differencing or log-returns transformation, while prices themselves are typically non-stationary. Unit-root tests such as Augmented Dickey-Fuller are used to assess stationarity before modelling."
+  },
+  {
+    "id": "fin_006",
+    "title": "Volatility Clustering",
+    "text": "Volatility clustering refers to the empirical observation that large price changes tend to be followed by large changes, and small by small. This motivates ARCH and GARCH families of models. Realised volatility computed from high-frequency data provides a more accurate measure of current risk than simple historical standard deviation."
+  },
+  {
+    "id": "fin_007",
+    "title": "Hang Seng Index Overview",
+    "text": "The Hang Seng Index is the primary benchmark for the Hong Kong equity market. It is a free-float adjusted market-capitalisation weighted index covering the largest and most liquid companies listed on the Hong Kong Stock Exchange. Sector composition is dominated by financials, property, and increasingly technology and consumer names."
+  },
+  {
+    "id": "fin_008",
+    "title": "Liquidity Risk",
+    "text": "Liquidity risk is the risk that a position cannot be exited or entered at a reasonable price within a reasonable time. It has two main components: market liquidity (ability to trade without moving the price) and funding liquidity (ability to meet cash obligations). Both become acute during market stress."
+  },
+  {
+    "id": "fin_009",
+    "title": "Value at Risk Concepts",
+    "text": "Value at Risk (VaR) estimates the maximum expected loss over a given horizon at a specified confidence level under normal market conditions. Common methods are historical simulation, parametric (variance-covariance), and Monte Carlo. VaR is a useful communication tool but does not capture tail risk beyond the chosen quantile."
+  },
+  {
+    "id": "fin_010",
+    "title": "Expected Shortfall",
+    "text": "Expected Shortfall (also called Conditional VaR or CVaR) measures the average loss given that the loss exceeds the VaR threshold. It is coherent and better reflects tail risk than VaR. Regulatory frameworks such as Basel have moved toward Expected Shortfall for certain capital calculations."
+  },
+  {
+    "id": "fin_011",
+    "title": "Momentum Factor",
+    "text": "The momentum factor captures the tendency of assets that have performed well (or poorly) in the recent past to continue that relative performance over intermediate horizons. It is one of the most robust empirical anomalies across equities, currencies, and commodities, though it experiences occasional sharp reversals."
+  },
+  {
+    "id": "fin_012",
+    "title": "Mean Reversion",
+    "text": "Mean reversion is the tendency of a variable to return toward its long-run average after deviation. In spreads and pairs trading, mean-reverting behaviour is actively exploited. Ornstein-Uhlenbeck processes are commonly used to model such dynamics. Not all assets exhibit reliable mean reversion at practical horizons."
+  },
+  {
+    "id": "fin_013",
+    "title": "Transaction Cost Analysis",
+    "text": "Transaction cost analysis (TCA) quantifies the total cost of executing a trade, including spread, market impact, timing risk, and opportunity cost. Implementation shortfall is a widely used benchmark that compares the arrival price with the final average execution price."
+  },
+  {
+    "id": "fin_014",
+    "title": "Market Impact",
+    "text": "Market impact is the adverse price movement caused by the execution of a large order. Temporary impact often reverts after the trade, while permanent impact reflects information content or inventory adjustment by the market. Square-root impact models are frequently used in optimal execution frameworks."
+  },
+  {
+    "id": "fin_015",
+    "title": "Risk Parity Allocation",
+    "text": "Risk parity allocates capital so that each asset or risk factor contributes equally to portfolio risk rather than equal capital weights. This typically leads to higher allocations to lower-volatility assets such as bonds. Leverage is often applied to reach target volatility."
+  },
+  {
+    "id": "fin_016",
+    "title": "Drawdown Management",
+    "text": "Maximum drawdown measures the largest peak-to-trough decline in portfolio value. Managing drawdowns involves position sizing, stop rules, and diversification across uncorrelated strategies. Recovery time after a drawdown is often longer than the time taken to reach the drawdown."
+  },
+  {
+    "id": "fin_017",
+    "title": "Correlation Breakdown",
+    "text": "During market crises, correlations between assets often rise sharply toward one, reducing the effectiveness of diversification. This phenomenon, sometimes called correlation breakdown or contagion, is a key reason stress testing and regime-aware risk models are necessary."
+  },
+  {
+    "id": "fin_018",
+    "title": "Overnight Risk",
+    "text": "Overnight risk refers to price gaps that occur when markets are closed. For equity indices and single stocks, overnight moves can account for a substantial portion of total variance. Strategies that hold positions overnight must size for this discrete risk component."
+  },
+  {
+    "id": "fin_019",
+    "title": "Slippage Sources",
+    "text": "Slippage is the difference between the expected execution price and the actual fill. Sources include bid-ask bounce, latency, partial fills, and market impact. Systematic measurement of slippage by venue, time of day, and order size is a core function of a trading desk."
+  },
+  {
+    "id": "fin_020",
+    "title": "Regime Detection",
+    "text": "Market regimes describe distinct periods of volatility, correlation, or trend behaviour. Hidden Markov models, threshold models, and simple volatility filters are used to detect regimes. Strategy parameters and risk limits are often conditioned on the current regime estimate."
+  },
+  {
+    "id": "fin_021",
+    "title": "Backtesting Pitfalls",
+    "text": "Common pitfalls in backtesting include look-ahead bias, survivorship bias, overfitting through excessive parameter optimisation, and ignoring transaction costs and market impact. Out-of-sample testing and walk-forward analysis help mitigate these issues."
+  },
+  {
+    "id": "fin_022",
+    "title": "Information Ratio",
+    "text": "The information ratio measures excess return relative to a benchmark divided by the tracking error. It quantifies the consistency of active returns. A higher information ratio indicates more reliable generation of alpha per unit of active risk taken."
+  },
+  {
+    "id": "fin_023",
+    "title": "Capacity Constraints",
+    "text": "Strategy capacity is the maximum capital that can be deployed before returns degrade due to market impact or competition. Capacity depends on average daily volume, turnover, and the aggressiveness of the signal. Many short-horizon strategies have limited capacity."
+  },
+  {
+    "id": "fin_024",
+    "title": "Funding Rate Basics",
+    "text": "In perpetual futures markets the funding rate is a periodic payment exchanged between long and short positions to keep the contract price anchored to the spot index. Persistent positive funding indicates net long demand and can be a carry signal for relative-value strategies."
+  },
+  {
+    "id": "fin_025",
+    "title": "Basis Risk",
+    "text": "Basis risk arises when a hedge does not move perfectly with the underlying exposure. Common sources include differences in maturity, location, grade, or the use of an index future against a single-stock position. Residual basis must be monitored and managed."
+  }
+]
